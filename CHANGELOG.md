@@ -1,5 +1,30 @@
 # Change log
 
+## release v1.1
+
+- GH-66: Allow parallel building of AMI and Vagrant boxes.
+- GH-67: Auto calculate checksum for given ISO file.
+- GH-70: Include changes for release of Knowledge Center 2016 SP4.
+
+## release v1.0
+
+- GH-54: Add support for Amazon Web Services EC2 AMI.
+- GH-55: Add support for Vagrant boxes (Hyper-V).
+- GH-53: Add support for docker container images.
+- GH-58: Configure RequireSSL attribute for ISHCM and ISHSTS web applications. Script `Set-IISRequireSSL.ps1` is added.
+- GH-50: Import ISHTemplate repository as a Builders folder. ISHBootstrap provides builder scripts for use with AWS EC2 AMI, Docker containers, Packer and Vagrant.
+- GH-62: Use ISHServer cmdlets that manage the user profile
+
+Known issues:
+
+- GH-53: Add support for docker container images. Requires some fine-tuning
+
+## pre-release v0.8
+
+- GH-44: ISHBootstrap is not Set-StrictMode combatible.
+- GH-45 and GH-46: Azure file and blob storage support. (Requires [ISHServer](https://github.com/Sarafian/ISHServer) version 1.2)
+- GH-48: Allow override of input parameters when installing content manager.
+
 ## pre-release v0.7
 
 - Added support for AWS S3 buckets. Requires [ISHServer](https://github.com/Sarafian/ISHServer) version 1.1
